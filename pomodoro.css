@@ -8,7 +8,7 @@ pomodoro-timer {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  font-family: 'roboto mono';
+  font-family: 'roboto mono', monospace;
   font-size: 12rem;
   color: #fff;
 }
