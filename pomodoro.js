@@ -1,7 +1,10 @@
+let urlParams = new URLSearchParams(window.location.search);
 let pomodoro = document.querySelector('pomodoro-timer')
 let title = document.querySelector('title')
-let timeRemaining = 1499
-let running = false
+let timeRemaining = urlParams.get('time') * 60 || 1499
+let running = true
+
+updateTimer()
 
 document.onkeyup = function(event){
   if (event.keyCode == 32) {
